@@ -1,16 +1,26 @@
-# machine_learning_project-supervised-learning
+# Final-Project-Supervised-Learning
 
-## Project Outcomes
-- Supervised Learning: use supervised learning techniques to build a machine learning model that can predict whether a patient has diabetes or not, based on certain diagnostic measurements.The project involves three main parts: exploratory data analysis, preprocessing and feature engineering, and training a machine learning model. 
-### Duration:
-Approximately 3 hours and 20 minutes.
-### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Project/Goals
+In this project, I am following the instructions in the 'Supervised Learning - Project' notebook. This project is a single-day project to apply what we have learned about ML, specifically, supervised learning. I will be attempting to create a machine learning algorithm that will identify 
+people at risk of diabetes based on the variables given.
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+## Process
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+- Visualized the data to identify feature relationships and correlations, find any outliers, check whether the data contains any missing values, ensure the target variable values are well balanced, and just get a good understanding of the dataset being used.
+- Removed any missing or incorrect values and outliers from the dataset.
+- Split my data into training and testing sections. (80% for training and 20% for testing).
+- Since we have a classification problem, I used Logistic Regression and Decision Tree models.
+- Fit data into models and evaluated and compared results.
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+## Results
+
+- Several rows from the dataset were removed due to columns having zeros when they shouldn't. We have seen that Glucose has the highest correlation with whether or not a person has diabetes.
+- We have also observed that people with diabetes tend to be older, have a higher glucose level and BMI.
+- We found some outliers and removed those neccessary to remove.
+- From our models, the Logistic Regression Model gave us a higher accuracy and AUC score, and a lower log loss compared to the Decision Tree Model we created. This means the Logistic Regression Model performed better with our data and returned more accurate results.
+
+## Challenges 
+Main challenge has been time as this was a single-day project.
+
+## Future Goals
+Use a larger range of machine learning algorithms and compare results. 
